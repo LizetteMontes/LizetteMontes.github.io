@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.buttons-network {
+    position: fixed;
+    top: 40%;
+    left: 10px;
+    z-index: 1;
+    
+}
+
+.buttons-network_button {
+    width: 55px;
+    height: 55px;
+    display: block;
+    box-shadow: 0 3px 6px rgb(0, 0, 0.2);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.buttons-network_button p {
+    display: none;
+}
+
+.buttons-network_button:hover>p {
+    display: block;
+}
+
+.buttons-network_button:hover {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.buttons-network_button:nth-child(1):hover {
+    color: #0c16ae;
+}
+.buttons-network_button:nth-child(2):hover {
+    color: #E1306C;
+}
+.buttons-network_button:nth-child(3):hover {
+    color: #25D366;
+}
+.buttons-network_button:nth-child(4):hover {
+    color: #000000;
+}

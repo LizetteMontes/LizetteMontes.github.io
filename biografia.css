@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color_primario: #fff;
+    --color_primario_suave: #d3d3d3;
+    --color_blanco: #0d0d0d;
+    --altura_header: 80px;
+    --padding_left_right: 4.5rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /*height: calc(100vh - var(--altura_header));*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+
+}
+
+.link {
+    font-size: 3rem;
+    color: var(--color_blanco);
+    font-weight: bold;
+}
+
+#biografia {
+    align-items: center;
+}
+
+#biografia h1 {
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#biografia p {
+    font-size: 45px;
+    color: rgb(101, 101, 101);
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: #d3d3d3;
+}
+
+.container-fluid img {
+    height: 650px;
+    width: 1500px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.container img {
+    height: 600px;
+    width: 600px;
+}
+
+.col-md-6 {
+    align-items: center;
+    background-color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-md-6 h1 {
+   padding-top: 5%;
+    text-align: center;
+}
+.col-md-6 h2{
+    padding-top: 105px;
+    justify-content: center;
+    align-items: center;
+}
+.col-md-3 img{
+    height: 500px;
+    width: 350px;
+    gap: 10px;
+}
+.entrevistas{
+    padding-top: 35px;
+}
+.entrevistas h1{
+   
+    text-align: center;
+}
+iframe{
+    padding-top: 25px;
+    width: 600px;
+    height: 450px;
+}
+.entrevistas h2{
+    
+    text-align: center;
+}
+
+.subtitulo h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

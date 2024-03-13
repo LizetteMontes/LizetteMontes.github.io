@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color_primario: #fff;
+    --color_primario_suave: #d3d3d3;
+    --color_blanco: #0d0d0d;
+    --altura_header: 80px;
+    --padding_left_right: 4.5rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.in-flex{
+    flex: 1;
+}
+.in-flex:first-child{
+    flex:2;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /*height: calc(100vh - var(--altura_header));*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+
+
+
+}
+
+.link {
+    font-size: 3rem;
+    color: var(--color_blanco);
+    font-weight: bold;
+}
+
+.carrete img {
+    top: 20px;
+    height: 650px;
+    width: 650px;
+}
+
+.carousel-inner {
+    padding-left: 25%;
+    padding-top: 1.5rem;
+}
+
+.carousel-control-prev-icon {
+    padding-left: 50%;
+}
+
+#bienvenida h1 {
+    font-size: 50px;
+    font-weight: light;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.texto {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: lighter;
+    justify-content: center;
+    text-align:center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-fluid img {
+    height: 650px;
+    width: 1500px;
+}
+
+footer {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
